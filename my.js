@@ -63,17 +63,26 @@ document.getElementById('reflection-form').addEventListener('submit', function(e
     }
 });
 
-// Step 5: Play Selected Song on YouTube
+// Step 5: Redirect to YouTube for Guaranteed Song Playback
 document.getElementById('song-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
     const songQuery = document.getElementById('song-name').value;
     const playerContainer = document.getElementById('player-container');
-    const player = document.getElementById('youtube-player');
+    const playingText = document.getElementById('playing-text');
+    const youtubeLink = document.getElementById('youtube-link');
     
-    // Pause background music if she plays a specific song
-    bgMusic.pause();
+    // Stop background audio if playing
+    if (bgMusic) {
+        bgMusic.pause();
+    }
 
-    player.src = `https://www.youtube.com/embed?listType=search&list=${encodeURIComponent(songQuery)}`;
+    const searchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(songQuery)}`;
+    
+    playingText.innerText = `Playing "${songQuery}" for you... 💕`;
+    youtubeLink.href = searchUrl;
     playerContainer.classList.remove('hidden');
+
+    // Automatically open the song on YouTube in a new tab
+    window.open(searchUrl, '_blank');
 });
