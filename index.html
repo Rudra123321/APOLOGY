@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORRY TO HER</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+
+    <!-- BACKGROUND RESPONSIVE VIDEO -->
+    <video class="bg-video" autoplay loop muted playsinline>
+        <source src="BG.mp4" type="video/mp4">
+    </video>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="bg-music" loop>
+        <source src="NITE KHAIR MANGA.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 1. LOGIN SCREEN -->
+    <div id="login-screen" class="card">
+        <h1>Hey Sweetheart 💖</h1>
+        <p>Answer these quick questions to unlock your message:</p>
+        
+        <form id="quiz-form">
+            <div class="input-group">
+                <label for="dob">What is your birthday?</label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="input-group">
+                <label for="nickname">What is your special nickname?</label>
+                <input type="text" id="nickname" placeholder="Type here..." required>
+            </div>
+
+            <p id="error-msg" class="error hidden">That's not right! Try again 💕</p>
+            <button type="submit">Unlock 💌</button>
+        </form>
+    </div>
+
+    <!-- 2. INTERMEDIATE QUESTIONS SCREEN -->
+    <div id="questions-screen" class="card hidden">
+        <h1>Just a few questions... 🥺</h1>
+        
+        <form id="feeling-form">
+            <div class="input-group">
+                <label for="q1">1. Are you feeling stressed?</label>
+                <select id="q1" required>
+                    <option value="" disabled selected>Choose an answer...</option>
+                    <option value="yes">Yes 😔</option>
+                    <option value="a_little">A little bit 😕</option>
+                    <option value="no">No 😊</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="q2">2. Are you still upset from last night?</label>
+                <select id="q2" required>
+                    <option value="" disabled selected>Choose an answer...</option>
+                    <option value="yes">Yes, still upset 💔</option>
+                    <option value="a_little">A little bit 😓</option>
+                    <option value="no">Not anymore ❤️</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="q3">3. Do you like to read the letter from your husband?</label>
+                <select id="q3" required>
+                    <option value="" disabled selected>Choose an answer...</option>
+                    <option value="yes">Yes, show me ❤️</option>
+                    <option value="of_course">Of course! 💖</option>
+                    <option value="no">No, I don't want to see or read the letter 💔</option>
+                </select>
+            </div>
+
+            <p id="reconsider-msg" class="error hidden">Please give your husband just one chance to explain... 🥺❤️</p>
+            <button type="submit">Read Letter ✉️</button>
+        </form>
+    </div>
+
+    <!-- 3. APOLOGY LETTER SCREEN -->
+    <div id="apology-screen" class="card hidden">
+        <h1>SORRY TO HER</h1>
+        <h2>A Letter of Apology</h2>
+        <div class="letter-content">
+            <p>Dear SWEETHEART</p>
+            <p>I am feeling guilty about what I had done to you.</p>
+            <p>But i didn't do it intentionally.</p>
+            <p>All the overthinking and doubts are on my mind </p>
+            <p>I am sorry for the last night...</p>
+            <p>I was trying hard to control myself but i can't do it.😭</p>
+            <p>The moment u said that i can bloack you insted u will not delete the IG account 💔</p>
+            <p>U have known me not a single percent i am feeling like this ... because if u known me , U should have understood that i will later on tell u to undo the delete of account as id did in past . 🫠😔</p>
+            <p>But its not your fault, Its my fault that I become too much angry that u are getting feared from as u said...</p>
+            <p>Please forgive me if u can . I will again try to control and next time i will try not to block u between a fight.</p>
+            <p>Sorry from me . </p>
+            <p>I don't care how much i will fight to you but i will always comeback to you .</p>
+            <p>That's a promise.</p>        
+            <p>I love you the Most as always👸🏻😘🫂👻</p>        
+        </div>
+        <button id="finish-letter-btn">Continue 💖</button>
+    </div>
+
+    <!-- 4. BEST MOMENT & ACTIVITY SCREEN -->
+    <div id="reflection-screen" class="card hidden">
+        <h1>One Last Thing... ✨</h1>
+        
+        <form id="reflection-form">
+            <div class="input-group">
+                <label for="best-moment">What is the best moment you have ever lived with me?</label>
+                <textarea id="best-moment" rows="4" placeholder="Share your favorite memory..." required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="next-action">What would you like to do right now?</label>
+                <select id="next-action" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="song">I would like to hear a song 🎵</option>
+                    <option value="talk">I would like to talk to you 📞</option>
+                    <option value="relax">I would like to relax 🧘‍♀️</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit 💌</button>
+        </form>
+    </div>
+
+    <!-- 5A. SONG SCREEN -->
+    <div id="song-screen" class="card hidden">
+        <h1>Music For You 🎶💕</h1>
+        <div class="gif-box">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW42eXZjNm9kZTZqMnk4ZWRvdGNmd3EwdW5yb3hnbXQzaGZyeDVicCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Lq0h93752f6J9tijrh/giphy.gif" alt="Cute music gif">
+        </div>
+        <p>Tell me what song you want to hear, my love: 🥰✨</p>
+        
+        <form id="song-form">
+            <div class="input-group">
+                <input type="text" id="song-name" placeholder="Enter song name & artist..." required>
+            </div>
+            <button type="submit">Play Song ▶️💖</button>
+        </form>
+
+        <div id="player-container" class="hidden" style="margin-top: 20px;">
+            <iframe id="youtube-player" width="100%" height="250" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 5B. TALK SCREEN -->
+    <div id="talk-screen" class="card hidden">
+        <h1>I'm Here For You 📞🥰</h1>
+        <div class="gif-box">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3ZtZmw2NmR4OHo3ZG04dmxwbTZ3d2w1YnlpdXZsbWllZDJudmx2cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l8u3cxlbTjXU0eC5jQ/giphy.gif" alt="Cute hug gif">
+        </div>
+        <p class="emoji-line">👩‍❤️‍👨 🫂 💖 🧸 ✨</p>
+        <p>I want to hear your voice too. Call or message your husband whenever you are ready! I love you endlessly. ❤️😘</p>
+    </div>
+
+    <!-- 5C. RELAX SCREEN -->
+    <div id="relax-screen" class="card hidden">
+        <h1>Rest Well, My Love 🧘‍♀️💞</h1>
+        <div class="gif-box">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3NpaHJzNWpqcDJreG82ZmQ0NndsbHNtdmdicG93eW9lZmptbXB3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKoWXm3okO1kgHC/giphy.gif" alt="Cute relax gif">
+        </div>
+        <p class="emoji-line">💖 🌸 🫂 💤 🧸 ✨</p>
+        <p>Close your eyes, take a deep breath, and relax. I'm always holding you close in my heart. I love you so much! 🥰❤️</p>
+    </div>
+
+    <script src="my.js"></script>
+</body>
+</html>
