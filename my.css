@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* RESPONSIVE BACKGROUND VIDEO */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(0.65); /* Keeps text readable over video */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.92); /* Glassy white finish */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #e63946;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #457b9d;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: inherit;
+}
+
+button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #d62828;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: #e63946;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.letter-content {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.letter-content p {
+    margin: 12px 0;
+}
+
+/* CUTE GIF & EMOJI STYLING */
+.gif-box img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.emoji-line {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+iframe {
+    border-radius: 10px;
+}
